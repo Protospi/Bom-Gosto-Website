@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+    <article id="hero" style="border-radius: 20px;">
+        <h1 class="heading_shadow">OFERTA SPECIAL</h1>
+        <p style="font-size: large;">
+            30% de Desconto essa Semana
+        </p>
+        <a href="{% url 'book' %}" class="cta"> Reserve agora </a>
+    </article>
+</section>
+<section>
+    <article style="border-radius: 20px;">
+        <h2>Nosso Menu</h2>
+        <img src="{% static 'img/grill.jpg' %}" style="border-radius: 20px;">
+        <p>
+            Pratos baseados na culinária mineira com tempero caseiro.
+        </p>
+        <p>
+            <a href="{% url 'menu' %}">Confira nosso cardápio</a>
+        </p>
+    </article>
+    <article style="border-radius: 20px;">
+        <h2>Reserve uma mesa</h2>
+        <img src="{% static 'img/salad.jpg' %}" style="border-radius: 20px;">
+        <p>
+            Reserve uma mesa para experiência uma culinária autêntica.
+        </p>
+        <p>
+            <a href="{% url 'book' %} ">Reserve sua mesa agora</a>
+        </p>
+    </article>
+    <article style="border-radius: 20px;">
+        <h2>Horário de Funcionamento</h2>
+        <img src="{% static 'img/head_chef.jpg' %}" style="border-radius: 20px;">
+        <ul>
+            <li>Segunda - Sexta: 14h - 22h</li>
+            <li>Sábado: 14h - 23h</li>
+            <li>Domingo: 14h - 21h</li>
+        </ul>
+    </article>
+</section>
+{% endblock %}

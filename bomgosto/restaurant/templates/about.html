@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+    <article>
+        <h1>Quem Somos</h1>
+        <!--Begin row-->
+        <div class="row">
+            <!--Begin col-->
+            <div class="column">
+                <p>
+                    Bem-vindo ao Restaurante Bom Gosto, um lugar onde você pode experimentar a verdadeira culinária mineira como se estivesse na cozinha de sua própria avó. Fundado por três irmãos, Pedro, Lucas e Laura, que cresceram comendo as delícias culinárias preparadas
+                    por sua avó Iole Loes. A avó Iole passou mais de 40 anos cozinhando e guardando receitas passadas ao longo de gerações das terras de Salinas, região norte de Minas Gerais.
+                </p>
+                <p>
+                    O Restaurante Iole Loes é um tributo a essa tradição familiar e à herança culinária da região norte de Minas Gerais. Com pratos tipicos da culinaria de mina gerais, o cardápio inclui uma variedade de iguarias como feijão tropeiro, frango com quiabo, tutu
+                    de feijão, pão de queijo, doce de leite, além de muitas outras delícias.
+                </p>
+
+                <p>
+                    Os irmãos Pedro, Lucas e Laura criaram um ambiente acolhedor e aconchegante para seus clientes, onde podem desfrutar de uma refeição deliciosa enquanto apreciam a decoração rústica do restaurante. As paredes são decoradas com fotos da família e utensílios
+                    de cozinha antigos, criando uma atmosfera nostálgica e agradável.
+                </p>
+
+                <p>
+                    O Restaurante Iole Loes é mais do que apenas um lugar para comer, é uma homenagem a tradição culinária e um tributo à família. Venha nos visitar e experimente a verdadeira culinária mineira. Estamos ansiosos para compartilhar nossa história e nossa comida
+                    com você!
+                </p>
+            </div>
+            <!--End col-->
+
+            <!--Begin col-->
+            <div class="column">
+                <figure class="figure">
+                    <img src="{% static 'img/salao_principal.png' %}" alt="Salão Principal" />
+                    <figcaption class="figure-caption">
+                        Bom Gosto salão principal.
+                    </figcaption>
+                </figure>
+            </div>
+            <!--End col-->
+        </div>
+        <!--End row-->
+    </article>
+</section>
+{% endblock %}

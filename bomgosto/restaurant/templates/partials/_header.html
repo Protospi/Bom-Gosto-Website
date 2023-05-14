@@ -1,0 +1,12 @@
+{% load static %}
+<header style="padding: 1rem">
+    <img src="{% static 'img/logo.png' %}" />
+</header>
+<nav>
+    <ul>
+        <li style="padding-left: 0.5rem; padding-right: 0.5rem"><a href="{% url 'home' %}">Início</a></li>
+        <li style="padding-left: 0.5rem; padding-right: 0.5rem"><a href="{% url 'about' %}">Sobre</a></li>
+        <li style="padding-left: 0.5rem; padding-right: 0.5rem"><a href="{% url 'menu' %}">Menu</a></li>
+        <li style="padding-left: 0.5rem; padding-right: 0.5rem"><a href="{% url 'book' %}">Reserva</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div style="padding-left: 1rem;">
+    <h1>Menu</h1>
+</div>
+
+<!--Begin col-->
+{% for item in menu.menu %}
+<div class="row">
+    <div class="column" style="padding-left: 5rem">
+        <p>
+            <a href="{% url 'menu_item' pk=item.pk %}">
+                {{ item.name }}
+                </a>
+            <span class="menu-price" style="padding-top: 1rem">
+                R${{ item.price }}.00
+            </span>
+        </p>
+    </div>
+    <div class="column">
+        <p style="text-align: center;">
+            <a href="{% url 'menu_item' pk=item.pk %}">
+                <img src="{% static 'img/'|add:item.name|add:'.png' %}" alt="{{ item.name }}" width="150" height="110">
+            </a>
+        </p>
+    </div>
+</div>
+{% endfor %}
+
+<!--End col-->
+{% endblock %}
